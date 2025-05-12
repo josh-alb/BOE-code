@@ -1,0 +1,52 @@
+verbosity=1
+
+% Here are possible key-profile sets. Make sure that all but one set is commented out.
+
+%Kostka-Payne profiles
+%major_profile = 0.748 0.060 0.488 0.082 0.670 0.460 0.096 0.715 0.104 0.366 0.057 0.400
+%minor_profile = 0.712 0.084 0.474 0.618 0.049 0.460 0.105 0.747 0.404 0.067 0.133 0.330
+
+%scaled CBMS profiles
+%major_profile = 0.50 0.20 0.35 0.20 0.45 0.40 0.20 0.45 0.20 0.35 0.15 0.40
+%minor_profile = 0.50 0.20 0.35 0.45 0.20 0.40 0.20 0.45 0.35 0.20 0.15 0.40
+
+%scaled K-K profiles
+%major_profile = 0.635 0.223 0.348 0.233 0.438 0.409 0.252 0.519 0.239 0.366 0.229 0.288
+%minor_profile = 0.633 0.268 0.352 0.538 0.260 0.353 0.254 0.475 0.398 0.269 0.334 0.317
+
+%Temperley profiles
+%major_profile = 0.811  0.024  0.659  0.074  0.721  0.616  0.117  0.835  0.088  0.430  0.031  0.544
+%minor_profile = 0.786  0.058  0.618  0.734  0.052  0.618  0.185  0.763  0.497  0.104  0.139  0.399
+
+%Albuquerque-Haydn profiles
+major_profile = 0.860 0.029 0.459 0.019 0.612 0.442 0.075 0.785 0.025 0.278 0.020 0.356
+minor_profile = 0.800 0.009 0.502 0.614 0.011 0.454 0.058 0.889 0.258 0.040 0.056 0.326
+
+
+% Does the input vector assume an NPC profile (0) or a TPC profile (1)?
+npc_or_tpc_profile=0
+
+% The key-profile value for TPCs outside the range of F#-Db. (Only relevant if a TPC profile is 
+% being used)
+default_profile_value = 1.5
+
+% This sets the key-finding algorithm used. 0 = Krumhansl-Schmuckler algorithm, 1 = Temperley
+% algorithm in CBMS, 3 = Bayesian key-finding algorithm.
+scoring_mode = 3
+
+% The penalty for changing keys from one segment to another. In Bayesian model, this is 
+% the probability of changing key (so change penalty = 1.0 means each segment MUST modulate!).
+% change_penalty= .002
+change_penalty= .01
+
+% The metrical level used to divide the piece into segments.
+segment_beat_level=3
+
+% These commands relate to the optional Roman numeral analysis. 
+beat_printout_level=2
+romnums=0
+romnum_type=0
+running=0
+
+
+
